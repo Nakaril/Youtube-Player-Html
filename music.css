@@ -1,0 +1,322 @@
+/* Resto de los estilos */
+body {
+  background-color: #181818;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu {
+  width: 100%;
+  background-color: #282828; /* Color verde de Spotify */
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu a {
+  color: #1DB954;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+header {
+  align-items: center;
+  background-color: #181818;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+input[type="text"] {
+  background-color: #535353;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  height: 30px;
+  margin-left: 10px;
+  padding: 0 10px;
+  width: 230px;
+  color: #fff;
+}
+
+button {
+  background-color: #1DB954;
+  color: #fff;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 5px 10px;
+}
+
+#playlist-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  
+}
+#playlist-container div {
+  margin-bottom: 50px; 
+  margin-left: 20px;/* Ajusta el valor del margen inferior según tus preferencias */
+}
+
+
+.playlist-item {
+  display: flex;
+  align-items: left;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.playlist-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.playlist-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.playlist-item-title {
+  font-size: 14px;
+  margin: 0;
+}
+
+#player-and-controls-container {
+  justify-content: center;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#player-container {
+  align-items: flex-end; /* Cambiado a alineación a la derecha */
+  height: 160px;
+  width: 240px;
+}
+
+#video-details {
+  display: flex;
+  align-items: flex-end; /* Cambiado a alineación a la derecha */
+  margin-bottom: 20px;
+}
+
+#play-button.paused {
+  color: red;
+}
+
+.thumbnail-container {
+  position: relative;
+  width: 320px;
+  height: 180px;
+  overflow: hidden;
+}
+
+.thumbnail-container img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+
+
+
+#info-container {
+  flex-grow: 1;
+}
+
+#video-title {
+  font-size: 20px;
+  margin: 0;
+  color: #fff; /* Cambiado a color blanco */
+}
+
+#video-description {
+  margin: 5px 0;
+  color: #fff; /* Cambiado a color blanco */
+}
+
+#flote {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+}
+
+#ojete {
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #282828;
+  display: flex;
+  align-items: center;
+}
+
+.spotify-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: #1DB954; /* Color verde de Spotify */
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.control-button:hover {
+  color: #1ED760; /* Color verde claro de Spotify al pasar el cursor */
+}
+
+.fa-play:before {
+  content: "\f04b"; /* Icono de reproducción */
+}
+
+.fa-pause:before {
+  content: "\f04c"; /* Icono de pausa */
+}
+
+.fa-backward:before {
+  content: "\f04a"; /* Icono de avance de 30 segundos */
+}
+
+.fa-forward:before {
+  content: "\f04e"; /* Icono de retraso de 30 segundos */
+}
+
+.fa-redo:before {
+  content: "\f01e"; /* Icono de bucle */
+}
+
+.control-button.active {
+  /* Estilos para el botón de bucle activado */
+  /* Por ejemplo, puedes cambiar el color de fondo */
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+.control-button.active {
+  /* Estilos para el botón de bucle activado */
+  /* Por ejemplo, puedes cambiar el color de fondo */
+  color: #ffffff;
+}
+
+/* Resto de los estilos */
+
+#info-container {
+  flex-grow: 1;
+}
+
+#playback-controls button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: #1DB954; /* Color verde de Spotify */
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+#playback-controls button:hover {
+  color: #1ED760; /* Color verde claro de Spotify al pasar el cursor */
+}
+
+
+
+  
+header {
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+
+
+
+p {
+    margin-top:1.4rem;
+    margin-bottom: 4rem;
+    font-family: 'Raleway', sans-serif;
+    font-size 1.4rem;
+}
+
+a {
+  color:#ffffff;
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  margin: 0;
+
+}
+
+.video-info {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.video-info h3 {
+  margin: 0;
+  margin-left: 10px; /* Ajusta el valor del margen según tus preferencias */
+  color: #ffffff;
+}
+
+
+
+/*Botón de cambio de tema*/
+
+
+
+
+  
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  #player-container {
+    width: 150px;
+    height: 150px;
+  }
+
+  #video-title {
+    font-size: 14px;
+  }
+
+  #video-description {
+    font-size: 12px;
+  }
+
+  .thumbnail {
+    width: 80px;
+    height: 60px;
+  }
+}

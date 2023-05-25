@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spotify YouTube</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="music.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+
+</head>
+<body>
+  <nav class="menu">
+    <ul>
+      <li><a class="fa fa-home" href="index.html"></a></li>
+      <li><a style="background-color: #8a8a8a;" class="fa-solid fa-music" href="music.html"></a></li>
+      <li><a class="fa-solid fa-clock-rotate-left" onclick="toggleDiv()" ></a></li>
+      <li><a class="fa fa-cog" href="set.html"></a></li>
+      
+     <!-- <li><a class="fa-solid fa-bars"></a></li> util mas tarde -->
+    </ul>
+  </nav>
+  
+  <header>
+    <h1></h1>
+    <input type="text" id="search-input" placeholder="Buscar Canciones/Videos">
+    <button style="border-radius: 50%;" class="fa fa-search" id="search-button"></button>
+  </header>
+
+
+  
+<div id="history-container" style="display: none;">
+  <ul id="history-list"></ul>
+</div>
+
+<a id="botonAdicional" class="fa-solid fa-trash-arrow-up" style="display: none; color: #1DB954; width: 30px;" onclick="clearHistory()" ></a>
+  
+
+  
+  <div id="playlist-container">
+    <!-- Aquí se mostrará la lista de reproducción -->
+  </div>
+
+<div id="flote">
+  <div id="player-and-controls-container">
+    <div id="player-container" style="width: 0; height: 0; overflow: hidden;">
+  <!-- Aquí se mostrará el reproductor de video de YouTube -->
+</div>
+
+      <!-- Aquí se mostrará el reproductor de video de YouTube -->
+ </div>
+
+  
+<div id="ojete">
+
+  
+    <h2 id="video-title"></h2>
+    <p id="video-creator"></p>
+
+    
+  
+  <div class="spotify-controls">
+      <button class="control-button" id="favorite-button"><i class="fa fa-thumbs-up "></i></button>
+  <button class="control-button" id="previous-button"><i class="fas fa-backward"></i></button>
+  <button class="control-button" id="play-button"><i class="fas fa-play"></i></button>
+  <button class="control-button" id="next-button"><i class="fas fa-forward"></i></button>
+ <button id="loop-button" class="control-button loop-button"><i class="fas fa-repeat"></i></button>
+   
+ </div>
+</div>
+</div>
+
+
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+  <script>
+    // Cargar la biblioteca de la API de YouTube
+    function loadYouTubeAPI() {
+      const tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      const firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    }
+    
+    // Llamar a la función para cargar la biblioteca de la API de YouTube
+    loadYouTubeAPI();
+  </script>
+  </body>
+</html>
+

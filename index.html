@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spotify YouTube</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="menu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+
+</head>
+<body>
+
+  <nav class="menu">
+    <ul>
+      <li><a style="background-color: #8a8a8a;" class="fa fa-home" href="index.html"></a></li>
+      <li><a class="fa-solid fa-music" href="music.html"></a></li>
+      <li><a class="fa fa-cog" href="set.html"></a></li>
+     <!-- <li><a class="fa-solid fa-bars"></a></li> util mas tarde -->
+    </ul>
+  </nav>
+
+
+
+   <link rel="stylesheet" href="style.css">
+
+
+
+    <section class="playing">
+
+      <div class="playing__art">
+
+        <img src="https://i.scdn.co/image/ab67616d0000b273d8e0e065037b496212e554b7" alt="Album Art" />
+
+      </div>
+
+      <div class="playing__song">
+
+        <a class="playing__song__name">Just The Two Of Us</a>
+
+        <a class="playing__song__artist">Grover Washington, Jr.</a>
+
+      </div>
+
+      <div class="playing__add">
+
+        <i class="ion-checkmark"></i>
+
+      </div>
+
+    </section>
+    
+  </div>
+  
+  <div class="content__middle">
+  
+    
+      <div class="artist__header">
+      
+        <div class="artist__info">
+        
+          <div class="profile__img">
+          
+            <img src="https://media.discordapp.net/attachments/786147931215888394/1109601337055907898/IMG_20220830_1950451.jpg" alt="G-Eazy" />
+            
+          </div>
+          
+          <div class="artist__info__meta">
+          
+            <div class="artist__info__type">Developer</div>
+            
+            <div class="artist__info__name">Nakari-</div>
+            
+            <div class="artist__info__actions">
+            
+              <button class="button-dark">
+                <i class="ion-ios-play"></i>
+                Play
+              </button>
+              
+              <button class="button-light">Follow</button>
+              
+              <button class="button-light more">
+                <i class="ion-ios-more"></i>
+              </button>
+              
+            </div>
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="artist__listeners">
+        
+          <div class="artist__listeners__count"></div>
+          
+          <div class="artist__listeners__label"></div>
+          
+        </div>
+        
+        <div class="artist__navigation">
+        
+          <ul class="nav nav-tabs" role="tablist">
+            
+           
+            
+          
+            
+            <!--<li role="presentation">
+              <a href="#artist-about" aria-controls="artist-about" role="tab" data-toggle="tab">About</a>
+            </li>-->
+            
+          </ul>
+          
+          <div class="artist__navigation__friends">
+      
+            
+          </div>
+          
+        </div>
+        
+      </div>
+      
+      <div class="artist__content">
+      
+        <div class="tab-content">
+      
+          <!-- Overview -->
+          <div role="tabpanel" class="tab-pane active" id="artist-overview">
+            
+            <div class="overview">
+            
+              <div class="overview__artist">
+            
+               
+
+                <!-- Popular-->
+                <div class="section-title">Popular</div>
+
+                <div class="tracks">
+
+ 
+
+  <div class="track">
+    <div class="track__art">
+      <img src="https://i1.sndcdn.com/artworks-QasxvoYBm2HbeKuf-zOQA9Q-t500x500.jpg" alt="It's Dark Out" />
+    </div>
+    <div class="track__number">1</div>
+    <div class="track__added">
+      <i class="ion-checkmark-round added"></i>
+    </div>
+    <div class="track__title">Mordecai Y Los Rigbys</div>
+    <audio id="song" src="dios.mp3"></audio>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var track = document.querySelector('.track'); // Selecciona el div track completo
+        var song = document.getElementById('song');
+        track.addEventListener('click', function() {
+          if (song.paused) {
+            song.play();
+          } else {
+            song.pause();
+          }
+        });
+      });
+    </script>
+    <div class="track__explicit">
+      <span class="label">Explicit</span>
+    </div>
+    <div class="track__plays"></div>
+  </div>
+
+
+       
+  <div class="track">
+    <div class="track__art">
+      <img src="https://i1.sndcdn.com/artworks-000065781770-ofjjq5-t500x500.jpg" alt="It's Dark Out" />
+    </div>
+    <div class="track__number">2</div>
+    <div class="track__added">
+      <i class="ion-checkmark-round added"></i>
+    </div>
+    <div class="track__title">Aruarian Dance</div>
+    <audio id="song" src="Nujabes - Aruarian Dance (Samurai Champloo OST) . Track 03.mp3"></audio>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var track = document.querySelector('.track'); // Selecciona el div track completo
+        var song = document.getElementById('song');
+        track.addEventListener('click', function() {
+          if (song.paused) {
+            song.play();
+          } else {
+            song.pause();
+          }
+        });
+      });
+    </script>
+    <div class="track__explicit">
+      <span class="label">Explicit</span>
+    </div>
+    <div class="track__plays"></div>
+  </div>           
+                  
+
+
+                  
+                  <div class="track">
+
+                    <div class="track__art">
+
+                      <img src="https://p16.resso.me/img/tos-alisg-v-2102/8ebc0869bd9948d69befd4930519a501~c5_500x500.jpg" alt="When It's Dark Out" />
+
+                    </div>
+
+                    <div class="track__number">3</div>
+
+                    <div class="track__added">
+
+                      <i class="ion-checkmark-round added"></i>
+
+                    </div>
+
+                    <div class="track__title">B4NDO$</div>
+
+                    <div class="track__explicit">
+
+                      <span class="label">Explicit</span>
+
+                    </div>
+
+                    <div class="track__plays"></div>
+
+                  </div>
+
+                  <div class="track">
+
+                    <div class="track__art">
+
+                      <img src="https://i.scdn.co/image/ab67616d0000b273660b251d25d51665990552ec" alt="When It's Dark Out" />
+
+                    </div>
+
+                    <div class="track__number">4</div>
+
+                    <div class="track__added">
+
+                      <i class="ion-plus not-added"></i>
+
+                    </div>
+
+                    <div class="track__title">Kill you</div>
+
+                    <div class="track__explicit">
+
+                      <span class="label">Explicit</span>
+
+                    </div>
+
+                    <div class="track__plays"></div>
+
+                  </div>
+
+                  <div class="track">
+
+                    <div class="track__art">
+
+                      <img src="https://i1.sndcdn.com/artworks-hbC3naG6VAd2-0-t500x500.jpg" alt="These Things Happen" />
+
+                    </div>
+
+                    <div class="track__number">5</div>
+
+                    <div class="track__added">
+
+                      <i class="ion-checkmark-round added"></i>
+
+                    </div>
+
+                    <div class="track__title">Elephant</div>
+
+                    <div class="track__explicit">
+
+                      <span class="label">Explicit</span>
+
+                    </div>
+
+                    <div class="track__plays"></div>
+
+                  </div>
+
+                </div>
+                <button class="show-more button-light">Show 5 More</button><br>
+                <!-- / -->
+              <br>
+              </div>
+            
+
+
+<div class="section-title">Popular Artist</div>
+          <!-- Related Artists -->
+          <div role="tabpanel" class="tab-pane" id="related-artists">
+          
+            <div class="media-cards">
+            
+              <div class="media-card">
+              
+                <div class="media-card__image" style="background-image: url(https://res.cloudinary.com/shotgun/image/upload/q_auto,f_auto,c_limit,ar_1:1,w_1080/c_limit,q_auto,f_auto,ar_1:1,w_360/v1665304418/production/artworks/artists/Eminem);">
+                
+                  <i class="ion-ios-play"></i>
+                  
+                </div>
+                
+                <a class="media-card__footer">Eminem</a>
+                
+              </div>
+              
+              <div class="media-card">
+              
+                <div class="media-card__image" style="background-image: url(https://i.scdn.co/image/a7cb9fc6df8b68fdb071156add87284c3c941a04);">
+                
+                  <i class="ion-ios-play"></i>
+                  
+                </div>
+                
+                <a class="media-card__footer">Tame Impala</a>
+                
+              </div>
+              
+              <div class="media-card">
+              
+                <div class="media-card__image" style="background-image: url(https://media.revistavanityfair.es/photos/60e84d70ec46354bf448266f/master/w_1600%2Cc_limit/28299.jpg);">
+                
+                  <i class="ion-ios-play"></i>
+                  
+                </div>
+                
+                <a class="media-card__footer">Kanye West</a>
+                
+              </div>
+              
+              <div class="media-card">
+              
+                <div class="media-card__image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe1XkJ1eMq5hP4xAobj5NnYDGJ00iGlsfHmw&usqp=CAU);">
+                
+                  <i class="ion-ios-play"></i>
+                  
+                </div>
+                
+                <a class="media-card__footer">Daft Punk</a>
+                
+              </div>
+              
+              <div class="media-card">
+              
+                <div class="media-card__image" style="background-image: url(https://lh3.googleusercontent.com/a-/ACB-R5Sd3e5mlCUDBq7jSypFGspjptZiNSveAj5dvOq1=w544-h544-l90-rj-dcLWWWriUI);">
+                
+                  <i class="ion-ios-play"></i>
+                  
+                </div>
+                
+                <a class="media-card__footer">El Kanka</a>
+                
+              </div>
+              
+              
+              
+              <div class="media-card">
+              
+                <div class="media-card__image" style="background-image: url(https://static.qobuz.com/images/covers/6a/de/jlbarvxwede6a_600.jpg);">
+                
+                  <i class="ion-ios-play"></i>
+                  
+                </div>
+                
+                <a class="media-card__footer">Adriano Celentano</a>
+                
+              </div>
+              
+            </div>
+          
+          </div>
+          <!-- / -->
+
+          <!-- About // Coming Soon-->
+            <!--<div role="tabpanel" class="tab-pane" id="artist-about">About</div>-->
+          <!-- / -->
+
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+ 
+
+
+  
+  
+  <!-- Resto del contenido de tu página -->
+  <script src="script.js"></script>
+</body>
+</html>
